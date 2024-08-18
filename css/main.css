@@ -1,6 +1,6 @@
 /*color
 #FFEBAE - Lemon Meringue 
-#BDC8FE - Lavender Blue
+#A7B5FE - Periwinkle
 #D4E0F0 - Columbia
 #FEB737 - Honey
 #7CB8C0 - Sea Breeze
@@ -14,22 +14,20 @@ header{width: 100%; padding: 18px 0px; }
 #header-menu li{ margin-right: 20px;}
 
 /*main*/
-body{ background: #fff; margin: 0;}
-main{ max-width: 1300px; width: calc(100% - 50px); margin: auto;}
-a{ text-decoration: none; color: unset; color: #543787;}
-h1{color: #543787;}
-h2{color: #543787;}
-h3{color: #543787;} 
-h4{color: #543787;}
-li{color: #543787;}
-p{ color: #543787;}
+body{ background: #FFF; margin: 0;}
+.section-inner{max-width: 1300px; width: calc(100% - 50px); margin: auto;}
+a{ text-decoration: none; color: unset;}
 
 /*color schemes*/
-.lemon-bg{#FFEBAE;}
-.
+.lemon-bg{background:#FFEBAE; color:#543787;}/*
+.periwinkle-bg{background: #A7B5FE;  color:#543787;}*/
+.columbia-bg{ background: #D4E0F0; color: #543787;}
+/*.honey-bg{background: #FEB737; color: #FFF;}
+.sea-bg{ background: #7CB8C0; color: #FFF;}*/
+.indigo-bg{background: #543787; color: #FFF;}
 
 /*footer*/
-footer{width: 100%; padding: 18px 0px; background: #543787;}
+footer{width: 100%; padding: 18px 0px; }
 .footer-inner{max-width: 1300px; width: calc(100% - 50px); margin: auto;}
 #footer-menu{list-style: none; display: flex; padding-left: 0px;}
-#footer-menu li, #footer-menu li a{ margin-right: 20px; color: #BDC8FE;}
+#footer-menu li, #footer-menu li a{ margin-right: 20px; }
