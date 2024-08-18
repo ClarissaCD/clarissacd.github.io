@@ -1,5 +1,16 @@
 /*header*/
-#header-menu{ list-style: none;}
+header{width: 100%; padding: 18px 0px; }
+.header-inner{ max-width: 1300px; width: calc(100% - 50px); margin: auto;}
+#header-menu{ list-style: none; display: flex;}
+#header-menu li{ margin-right: 20px;}
+
+/*main*/
+main{ max-width: 1300px; width: calc(100% - 50px); margin: auto;}
+
+a{ text-decoration: none; color: unset;}
 
 /*footer*/
-#menu-footer{list-style: none;}
+footer{width: 100%; padding: 18px 0px;}
+.footer-inner{max-width: 1300px; width: calc(100% - 50px); margin: auto;}
+#footer-menu{list-style: none; display: flex;}
+#footer-menu li{ margin-right: 20px;}
