@@ -1,22 +1,37 @@
-/*color
+/*
+color
 #FFEBAE - Lemon Meringue 
 #A7B5FE - Periwinkle
 #D4E0F0 - Columbia
 #FEB737 - Honey
 #7CB8C0 - Sea Breeze
 #543787 - light Indigo
+
+fonts
+font-family: "Playfair Display", serif;
+font-family: "Didact Gothic", sans-serif;
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 /*header*/
-header{width: 100%; padding: 18px 0px; }
+header{width: 100%; padding: 18px 0px; position: fixed; }
 .header-inner{ max-width: 1300px; width: calc(100% - 50px); margin: auto;}
 #header-menu{ list-style: none; display: flex; padding-left: 0px;}
 #header-menu li{ margin-right: 20px;}
 
 /*main*/
 body{ background: #FFF; margin: 0;}
-.section-inner{max-width: 1300px; width: calc(100% - 50px); margin: auto;}
-a{ text-decoration: none; color: unset;}
+.section-inner{max-width: 1300px; width: calc(100% - 50px); margin: auto; padding: 50px 0;}
+
+a{ text-decoration: none; color: unset;    font-family: "Didact Gothic", sans-serif;}
+h1{    font-family: "Playfair Display", serif;}
+h2{    font-family: "Playfair Display", serif;}
+h3{    font-family: "Playfair Display", serif;}
+h4{    font-family: "Playfair Display", serif;}
+li{   font-family: "Didact Gothic", sans-serif;}
+p{   font-family: "Didact Gothic", sans-serif;}
 
 /*color schemes*/
 .lemon-bg{background:#FFEBAE; color:#543787;}/*
