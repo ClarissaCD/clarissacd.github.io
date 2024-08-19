@@ -22,7 +22,7 @@ header {width: 100%;  position: fixed;
   
   .header-inner {
     max-width: 1300px;
-    width: calc(100% - 40px); 
+    width: calc(100% - 100px); 
     margin: auto;
     padding: 18px 0;
     position: relative; 
@@ -89,13 +89,13 @@ header {width: 100%;  position: fixed;
   
   header.open .hamburger::before {
     transform: rotate(45deg);
-    top: 50%;
+    top: 36%;
   }
   
   header.open .hamburger::after {
     transform: rotate(-45deg);
     bottom: 50%;}
-header.open .hamburger span {    opacity: 0; }
+header.open .hamburger span {    opacity: 0; height: 30px;}
 
   
 /*main*/
@@ -148,6 +148,10 @@ span.hamburger {    display: inline-block;     right: 50px;    position: absolut
 /*main*/
 .two-columns div{ width: 100% !important; max-width: none !important;}
 .two-columns div:nth-child(2){margin-bottom: 30px;}
+
+/*footer*/
+#footer-menu{ display: block;}
+#footer-menu li, #footer-menu li a{margin-right: 0px;}
 
 }
 
