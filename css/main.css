@@ -17,10 +17,12 @@ header {    width: 100%;  position: fixed;    height: 80px;    background: #FFF;
 .header-inner {    max-width: 1300px;    width: calc(100% - 100px);    margin: auto;    padding: 18px 0;    position: relative;  }
   /* Menu */
 #header-menu {    list-style: none;    display: flex;    padding-left: 0;}
-#header-menu li, #header-menu li a {    margin-right: 20px;    font-weight: 700;    color: #543787;    text-transform: uppercase;}
+#header-menu li, #header-menu li a {    margin-right: 20px;    font-weight: 700;    color: #543787; 
+  cursor: pointer;   text-transform: uppercase;}
 .toggle{ display: none;}
+header .toggle::before {  top: 0px;}
 
-  
+#toggle{ display: none;}
   
 /*main*/
 body{ background: #FFF; margin: 0;}
@@ -32,7 +34,7 @@ img{max-width: 100%; width: 100%; height: auto; object-fit: cover; width: calc(1
     .two-columns div{ width: calc(50% - 50px); max-width: 600px;}
     .two-thirds div:nth-child(2){ width: calc(65% - 50px); max-width: 795px;}
     .two-thirds div:nth-child(3){ width: calc(35% - 50px); max-width: 405px;}
-span.anchor{position: absolute; top: 50; left: 0;}
+span.anchor{position: absolute; top: 50px; left: 0;}
 
 
 a{ text-decoration: none; color: unset;    }
@@ -66,24 +68,74 @@ footer{width: 100%; padding: 18px 0px; }
 /****mobile****/
 @media only screen and (max-width: 880px) {
 /*header*/
-#header-menu {    display: none;}  
+header {      display: flex;  align-items: center;}
+#header-menu {      display: none;}
 
-#page-head.toggle-menu hgroup .toggle{ display: block; 
+header .toggle {
+  display: block;
   position: absolute;
-  right: 25px;
-  top: 50%;
+  right: 0px;
+  top: 25px;
   transform: translateY(-50%);
   margin: auto;
   height: 23px;
-  width: 42px; } 
+  width: 35px;
+  cursor: pointer;
+  z-index: 3;
+}
 
-.header_custom_logo{      max-width: 230px;     z-index: 2;} 
+header .toggle span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #7CB8C0;  /* Default hamburger line color */
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
 
-header.toggle-menu .toggle:before, header.toggle-menu .toggle:after, header.toggle-menu .toggle span:before, .header.toggle-menu .toggle span:after{      height: 3px;
-  border-radius: 0;  text-shadow: 2px 2px 5px #88888836; background: #fff;}
-header .toggle span:before,header.toggle-menu .toggle span:after{ width: 100%;right: 0;  left: auto;}
-header #toggle:checked ~ .toggle span:before{ width: 100%;}
-header #toggle:checked ~ .toggle span:after{ width: 100%;}
+header .toggle span::before,
+header .toggle span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #7CB8C0;  /* Default hamburger line color */
+  border-radius: 5px;
+  transition: 0.3s ease-in-out all;
+}
+
+header .toggle span::before {
+  top: -10px;  /* Top line positioned above the center line */
+}
+
+header .toggle span::after {
+  top: 10px;  /* Bottom line positioned below the center line */
+}
+
+/* When the checkbox is checked (menu open), the hamburger turns into an 'X' */
+header #toggle:checked ~ .toggle span {
+  background-color: transparent;  /* Hide the middle line */
+}
+
+header #toggle:checked ~ .toggle span::before {
+  top: 0;  /* Center the top line */
+  transform: rotate(45deg);  /* Rotate the top line to form part of an 'X' */
+}
+
+header #toggle:checked ~ .toggle span::after {
+  top: 0;  /* Center the bottom line */
+  transform: rotate(-45deg);  /* Rotate the bottom line to form part of an 'X' */
+}
+.openmenu .menu-container {  position: absolute;width: 100%;
+  height: 100%;}
+.openmenu .header-inner {  height: 100vh;  background: #FFF;  width: 100vw;   padding: 100px 0 200px 0; }
+.openmenu  #header-menu {  display: block;  width: calc(100% - 50px);  max-width: 800px;  margin: auto; }
+.openmenu header .toggle{ right:50px; transform: translateY(50%);}
+
+#header-menu li, #header-menu li a{ font-size: 30px; line-height: 36px; margin-bottom: 20px; transition: 0.3s ease all;}
+
 
 /*main*/
 .two-columns div{ width: 100% !important; max-width: none !important;}
@@ -95,9 +147,22 @@ header #toggle:checked ~ .toggle span:after{ width: 100%;}
 
 }
 
+@media only screen and (max-width: 640px) {
+  /*header*/
+.header-inner{width: calc(100% - 50px);}
+#header-menu li, #header-menu li a{ font-size: 20px; line-height: 26px; margin-bottom: 10px;}
+.openmenu header .toggle{ right:25px;}
+
+/*main*/
+.section-inner{width: calc(100% - 50px);}
+
+/*footer*/
+.footer-inner{width: calc(100% - 50px);}
+}
+
 @media only screen and (max-width: 460px) {
 
 /*main*/
 img{width: calc(100% - 20px); border-width: 10px !important;}
-   
+
     }
