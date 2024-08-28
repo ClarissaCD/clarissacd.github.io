@@ -47,7 +47,7 @@ span.anchor{position: absolute; top: 50px; left: 0;}
 a{ text-decoration: none; color: unset;  font-size: 1em;  font-family: "Poppins", sans-serif; }
 h1{    font-family: "Poppins", sans-serif; font-size: 4em; line-height: 1;  margin-bottom: 1em;  position: relative; 
 text-transform: uppercase; font-weight: 900;}
-h2{   font-family: "Poppins", sans-serif; font-size: 3em;  line-height: 1; margin-bottom: 0.5em; }
+h2{   font-family: "Poppins", sans-serif; font-size: 3em;  line-height: 1; margin-bottom: 0.5em; text-transform: uppercase; }
 h3{ font-family: "Poppins", sans-serif; font-size: 2em;}
 h4{  font-family: "Poppins", sans-serif; font-size: 1.1em;}
 li{   font-family: "Lora", serif; font-size: 1em;}
@@ -57,21 +57,21 @@ p.button a{ padding: 10px 20px; font-weight: 700; text-transform: uppercase;
  }
 
 /*special sections + divs */
-.headshot img{margin: auto; height: 350px;}
+.headshot { height: 400px !important;}
 .two-col-inner.visual{ justify-content: center !important;
   display: flex;}
 .green-visual div{border-radius: 25px; border-bottom: #d6dc82 solid 10px; display: flex;
- padding: 15px;  background-color: #FFF6EE;
+ padding: 20px;  background-color: #FFF6EE;
 box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);  height: 300px;}
-.green-visual img{margin: auto; }
+.green-visual img{display: flex; justify-content: center; width: 100%; }
 .pink-visual div{border-radius: 25px; border-bottom: #d86072 solid 10px; display: flex;
- padding: 15px;  background-color: #FFF6EE;
+ padding: 20px;  background-color: #FFF6EE;
 box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);  height: 300px;}
-.pink-visual img{margin: auto; }
+.pink-visual img{display: flex; justify-content: center; width: 100%;}
 .lavendar-visual div{border-radius: 25px; border-bottom: #c6c2f2 solid 10px; display: flex;
-  padding: 15px;  background-color: #FFF6EE;
+  padding: 20px;  background-color: #FFF6EE;
  box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);  height: 300px;}
- .lavendar-visual img{margin: auto; }
+ .lavendar-visual img{display: flex; justify-content: center;width: 100%; }
  .max1000{ max-width: 1000px;}
  .margin-left{margin-left: 0; margin-right: auto;}
  .margin-right{ margin-right: 0; margin-left: auto;}
