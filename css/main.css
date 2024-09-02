@@ -1,10 +1,4 @@
 /*
-color
-#FEF6EC - Cream
-#FEEAEF - Pink
-#F9B8AF - Peach
-#BE4229 - Red
-
 fonts
   font-family: "Poppins", sans-serif;
 font-family: "Lora", serif;
@@ -19,7 +13,7 @@ background-color: #FFF6EE;}
 #header-menu {    list-style: none;    display: flex;    padding-left: 0;}
 #header-menu li, #header-menu li a {    margin-right: 20px;    font-weight: 700;    
   cursor: pointer;   text-transform: uppercase;}
-  #header-menu li a:hover{color: #d86072;}
+  #header-menu li a:hover{color: #AC4B5A;}
 .toggle{ display: none;}
 header .toggle::before {  top: 0px;}
 
@@ -32,13 +26,13 @@ img{max-width: 100%; height: auto;  border-radius: 15px;   }
 section{overflow: hidden;}
 .section-inner{max-width: 1200px; width:90%; margin: auto; padding: 50px 0; position: relative;}
 .two-columns{ display: flex; flex-flow: wrap; justify-content: space-between;}
-    .two-col-inner{ width: calc(50% - 50px); max-width: 600px; }
-    .col-65-35 .two-col-inner:nth-child(2){ width: calc(65% - 50px); max-width: 845px;}
+    .two-col-inner{ width: calc(50% - 25px); max-width: 600px; }
+    .col-65-35 .two-col-inner:nth-child(2){ width: calc(65% - 55px); max-width: 845px;}
     .col-65-35 .two-col-inner:nth-child(3){ width: calc(35%); max-width: 455px;}
     .col-35-65 .two-col-inner:nth-child(2){ width: calc(35%); max-width: 455px;}
     .col-35-65 .two-col-inner:nth-child(3){ width: calc(65% - 50px); max-width: 845px;}
 .three-columns{ display: flex; flex-flow: wrap; justify-content: space-between;}
-.three-columns div{ width: calc((100% / 3) - 60px); max-width: 373px;}
+.three-col-inner{ width: calc(33.33% - 15px); max-width: 373px;}
 
 span.anchor{position: absolute; top: 50px; left: 0;}
 
@@ -53,11 +47,9 @@ li{   font-family: "Lora", serif; font-size: 1em;}
 p{  font-family: "Lora", serif; font-size: 1.1em; margin-bottom: 1.5em;  }
 p.button{position: relative;  margin-top: 3em;}
 p.button a{  font-weight: 700; text-transform: uppercase; position: relative; }
-p.button a:after{content: url(../images/arrow-right-solid.svg); position: absolute; display: inline-block; width: 16px;
+p.download a:after{ content: url(../images/download-solid.svg);  position: absolute; display: inline-block; width: 16px;
   height: auto;  margin-left: 5px;  margin-top: 2px;   transition: ease-in-out all 0.3s;}
-p.button a:hover:after{ margin-left: 10px;}
-p.download a:after{ content: url(../images/download-solid.svg); }
-p.download a:hover:after{margin-left: 5px !important; margin-top: 5px;}
+p.download a:hover:after{ margin-top: 5px;}
 
 /*special sections + divs */
 .headshot { height: 400px !important;}
