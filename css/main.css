@@ -46,6 +46,7 @@ h3{ font-family: "Poppins", sans-serif; font-size: 2em;}
 h4{  font-family: "Poppins", sans-serif; font-size: 1.1em;}
 li{   font-family: "Lora", serif; font-size: 1em;}
 p{  font-family: "Lora", serif; font-size: 1.1em; margin-bottom: 1.5em;  }
+p:last-of-type{ margin-bottom: 0em;}
 p.button{position: relative;  margin-top: 3em;}
 p.button a{  font-weight: 700; text-transform: uppercase; position: relative; }
 p.download a:after{ content: url(../images/download-solid.svg);  position: absolute; display: inline-block; width: 16px;
