@@ -33,6 +33,7 @@ section{overflow: hidden;}
     .col-35-65 .two-col-inner:nth-child(3){ width: calc(65% - 50px); max-width: 845px;}
 .three-columns{ display: flex; flex-flow: wrap; justify-content: space-between;}
 .three-col-inner{ width: calc(33.33% - 60px); max-width: 373px;}
+.text-content{ margin-bottom: 30px;}
 
 span.anchor{position: absolute; top: 50px; left: 0;}
 
