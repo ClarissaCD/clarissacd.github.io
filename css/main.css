@@ -21,7 +21,7 @@ header .toggle::before {  top: 0px;}
   
 /*main*/
 body{  margin: 0; background: #FFF6EE; color: #262628; box-sizing: border-box;}
-main{ padding-top: 80px;}
+main{ padding: 100px 0;}
 img{max-width: 100%; height: auto;  border-radius: 15px;   }
 section{overflow: hidden;}
 .section-inner{max-width: 1200px; width:90%; margin: auto; padding: 50px 0; position: relative;}
