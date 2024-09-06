@@ -150,7 +150,7 @@ header #toggle:checked ~ .toggle span::after {
 
 
 /*main*/
-.two-col-inner,.three-columns div{ width: calc(100% - 50px) !important; max-width: none !important;}
+.two-col-inner,.three-columns div{ width: calc(100%) !important; max-width: none !important;}
 .two-col-inner:nth-child(1),.three-columns div:nth-child(1), .three-columns div:nth-child(2){margin-bottom: 50px;}
 .mobile-reverse{ flex-flow: column-reverse;}
 
