@@ -172,15 +172,12 @@ p.button{ margin-top: 1.5em;}
 
 @media only screen and (max-width: 640px) {
   /*header*/
-.header-inner{width: calc(100% - 50px);}
 #header-menu li, #header-menu li a{ font-size: 20px; line-height: 26px; margin-bottom: 10px;}
 .openmenu header .toggle{ right:25px;}
 
 /*main*/
-.section-inner{width: calc(100% - 50px);}
 
 /*footer*/
-.footer-inner{width: calc(100% - 50px);}
 }
 
 @media only screen and (max-width: 460px) {
