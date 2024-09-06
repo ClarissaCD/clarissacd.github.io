@@ -154,6 +154,16 @@ header #toggle:checked ~ .toggle span::after {
 .two-col-inner:nth-child(1),.three-columns div:nth-child(1), .three-columns div:nth-child(2){margin-bottom: 50px;}
 .mobile-reverse{ flex-flow: column-reverse;}
 
+
+a{  font-size: 0.8em;  }
+h1{   font-size: 3em; line-height: 1;  margin-bottom: 0.8em;  }
+h2{   font-size: 2em;  line-height: 1; margin-bottom: 0.5em;  }
+h3{  font-size: 1.5em;}
+h4{   font-size: 1em;}
+li{   font-size: 0.8em;}
+p{  font-size: 0.8em; margin-bottom: 1em;  }
+p.button{ margin-top: 1.5em;}
+
 /*footer*/
 #footer-menu{ display: block;}
 #footer-menu li, #footer-menu li a{margin-right: 0px;}
