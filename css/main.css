@@ -44,7 +44,7 @@ text-transform: uppercase; font-weight: 900;}
 h2{   font-family: "Poppins", sans-serif; font-size: 3em;  line-height: 1; margin-bottom: 0.5em; margin-top: 0em; text-transform: uppercase; }
 h3{ font-family: "Poppins", sans-serif; font-size: 2em;}
 h4{  font-family: "Poppins", sans-serif; font-size: 1.1em;}
-li{   font-family: "Lora", serif; font-size: 1em;}
+li{   font-family: "Lora", serif; font-size: 1em; margin-bottom: 1.5em;}
 p{  font-family: "Lora", serif; font-size: 1.1em; margin-bottom: 1.5em;  }
 p.button{position: relative;  margin-top: 3em;}
 p.button a{  font-weight: 700; text-transform: uppercase; position: relative; }
