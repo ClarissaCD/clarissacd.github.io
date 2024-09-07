@@ -55,8 +55,7 @@ p.download a:hover:after{ margin-top: 5px;}
 /*special sections + divs */
 .hero .section-inner{ padding: 100px 0;}
 .headshot { max-height: 500px;}
-.two-col-inner.visual{ justify-content: center !important;
-  display: flex;}
+.two-col-inner.visual{ justify-content: center !important;  display: flex;}
 .green-visual div{border-radius: 25px; border-bottom: #d6dc82 solid 10px; display: flex;
  padding: 20px;  background-color: #FFF6EE; 
 box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);     justify-content: center;}
