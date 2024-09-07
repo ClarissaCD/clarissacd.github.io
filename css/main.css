@@ -53,7 +53,7 @@ p.download a:after{ content: url(../images/download-solid.svg);  position: absol
 p.download a:hover:after{ margin-top: 5px;}
 
 /*special sections + divs */
-.hero .section-inner{ padding: 150px 0;}
+.hero .section-inner{ padding: 100px 0;}
 .headshot { max-height: 500px;}
 .two-col-inner.visual{ justify-content: center !important;
   display: flex;}
