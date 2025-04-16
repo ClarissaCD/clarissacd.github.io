@@ -3,3 +3,5 @@ $(document).ready(function() {
     $('body').toggleClass('openmenu');
   });
 });
+
+AOS.init();
