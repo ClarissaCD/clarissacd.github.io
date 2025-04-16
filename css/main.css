@@ -145,6 +145,7 @@ header #toggle:checked ~ .toggle span::after {
 .two-columns .two-col-inner:nth-child(1), .three-columns .three-col-inner:nth-child(1), .three-columns .three-col-inner:nth-child(2){margin-bottom: 50px;}
 .mobile-reverse{ flex-flow: column-reverse;}
 .green-visual img, .pink-visual img, .lavendar-visual img{ max-height: 550px;}
+.row{ flex-flow:wrap;}
 
 a{  font-size: 1em;  }
 h1{   font-size: 2.5em; line-height: 1;  margin-bottom: 0.5em;  }
