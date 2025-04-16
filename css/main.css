@@ -52,6 +52,9 @@ p.button a{  font-weight: 700; text-transform: uppercase; position: relative; }
 p.download a:after{ content: url(../images/download-solid.svg);  position: absolute; display: inline-block; width: 16px;
   height: auto;  margin-left: 5px;  margin-top: 2px;   transition: ease-in-out all 0.3s;}
 p.download a:hover:after{ margin-top: 5px;}
+p.email a:after{ content: url(../images/envelope.svg);  position: absolute; display: inline-block; width: 16px;
+  height: auto;  margin-left: 5px;  margin-top: 2px;   transition: ease-in-out all 0.3s;}
+p.email a:hover:after{ margin-top: 5px;}
 
 /*special sections + divs */
 .hero{ }
