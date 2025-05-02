@@ -8,10 +8,13 @@ font-family: "Lora", serif;
 /* Header */
 header {    width: 100%;  position: fixed;   height: 80px;      box-shadow: 0px 0px 5px rgba(38, 38, 40, 0.25); z-index: 100;  
 background-color: #FFF6EE;}
-.header-inner {  display: flex; flex-flow: wrap; justify-content: space-between;  max-width: 1200px;    width: 90%;    margin: auto;    padding: 18px 0;    position: relative;  }
+.header-inner {  display: flex; flex-flow: wrap; justify-content: space-between;  max-width: 1200px;    width: 90%;    margin: auto;
+  align-items: center;    padding: 18px 0;    position: relative;  }
   /* Menu */
 #header-menu {    list-style: none;    display: flex;    padding-left: 0;}
-#header-menu li, #header-menu li a {    margin-right: 20px;    font-weight: 700;    
+#header-menu li {    margin-right: 20px;    font-weight: 700;    margin-bottom: 0px;
+  cursor: pointer;   text-transform: uppercase;}
+ #header-menu li a {    margin-right: 20px;    font-weight: 700;    
   cursor: pointer;   text-transform: uppercase;}
   #header-menu li a:hover{color: #AC4B5A;}
 .toggle{ display: none;}
@@ -19,7 +22,7 @@ header .toggle::before {  top: 0px;}
 
 #toggle{ display: none;}
 
-header span.logo{ font-family: "Poppins", sans-serif; font-weight:900; font-size: 1em; line-height: 1em;}
+header span.logo{ font-family: "Poppins", sans-serif; font-weight:900; font-size: 1em; line-height: 1em; margin-right: 30px;}
   
 /*main*/
 body{  margin: 0; background: #FFF6EE; color: #262628; box-sizing: border-box;}
