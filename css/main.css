@@ -137,12 +137,18 @@ header #toggle:checked ~ .toggle span::after {
 }
 .openmenu .menu-container {  position: absolute;width: 100%;
   height: 100%;}
-.openmenu .header-inner {  height: 100vh;  background: #FFF;  width: 100vw;   padding: 100px 0 200px 0; }
+.openmenu .header-inner {  height: 100vh;  background: #FFF;  width: 100vw;   padding: 100px 0 200px 0; display: block !important; }
 .openmenu  #header-menu {  display: block;  width: calc(100% - 50px);  max-width: 800px;  margin: auto; }
 .openmenu header .toggle{ right:50px; transform: translateY(50%);}
 
 #header-menu li, #header-menu li a{ font-size: 30px; line-height: 36px; margin-bottom: 20px; transition: 0.3s ease all;}
 
+.logo{display: block;
+    width: calc(100% - 50px);
+    max-width: 800px;
+    font-size: 2em;
+    margin:
+auto;}
 
 /*main*/
 .two-col-inner,.three-col-inner{ width: calc(100%) !important; max-width: none !important;}
