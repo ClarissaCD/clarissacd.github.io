@@ -18,6 +18,8 @@ background-color: #FFF6EE;}
 header .toggle::before {  top: 0px;}
 
 #toggle{ display: none;}
+
+header span.logo{ font-family: "Poppins", sans-serif; font-weight:900; font-size: 1em; line-height: 1em;}
   
 /*main*/
 body{  margin: 0; background: #FFF6EE; color: #262628; box-sizing: border-box;}
