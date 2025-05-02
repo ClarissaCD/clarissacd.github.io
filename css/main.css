@@ -8,7 +8,7 @@ font-family: "Lora", serif;
 /* Header */
 header {    width: 100%;  position: fixed;   height: 80px;      box-shadow: 0px 0px 5px rgba(38, 38, 40, 0.25); z-index: 100;  
 background-color: #FFF6EE;}
-.header-inner {    max-width: 1200px;    width: 90%;    margin: auto;    padding: 18px 0;    position: relative;  }
+.header-inner {  display: flex; flex-flow: wrap; justify-content: space-between;  max-width: 1200px;    width: 90%;    margin: auto;    padding: 18px 0;    position: relative;  }
   /* Menu */
 #header-menu {    list-style: none;    display: flex;    padding-left: 0;}
 #header-menu li, #header-menu li a {    margin-right: 20px;    font-weight: 700;    
