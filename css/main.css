@@ -8,10 +8,10 @@ font-family: "Lora", serif;
 /* Header */
 header {    width: 100%;  position: fixed;   height: 80px;      box-shadow: 0px 0px 5px rgba(38, 38, 40, 0.25); z-index: 100;  
 background-color: #FFF6EE;}
-.header-inner {   max-width: 1200px;    width: 90%;    margin: auto;    padding: 18px 0;    position: relative; display: flex !important; flex-flow: wrap; align-items: center; justify-content: space-between;}
+.header-inner {   max-width: 1200px;    width: 90%;    margin: auto;    padding: 18px 0;    position: relative; display: flex !important;  align-items: center; justify-content: space-between;}
   /* Menu */
 #header-menu {    list-style: none;    display: flex;    padding-left: 0;}
-#header-menu li {    margin-right: 20px;    font-weight: 700;    margin-bottom: 0px !important;
+#header-menu li {    margin-left: 20px;    font-weight: 700;    margin-bottom: 0px !important;
   cursor: pointer;   text-transform: uppercase;}
  #header-menu li a {    margin-right: 20px;    font-weight: 700;    
   cursor: pointer;   text-transform: uppercase;}
@@ -21,7 +21,7 @@ header .toggle::before {  top: 0px;}
 
 #toggle{ display: none;}
 
-header span.logo{ font-family: "Poppins", sans-serif; font-weight:900; font-size: 2em; line-height: 1em; margin-right: 30px;}
+header span.logo{ font-family: "Poppins", sans-serif; font-weight:900; font-size: 1.5em; line-height: 1em; margin-right: 30px;}
   
 /*main*/
 body{  margin: 0; background: #FFF6EE; color: #262628; box-sizing: border-box; height: 100vh;}
@@ -58,7 +58,7 @@ p.download a:after{ content: url(../images/download-solid.svg);  position: absol
 p.download a:hover:after{ margin-top: 5px;}
 p.email a:after{ content: url(../images/envelope-solid.svg);  position: absolute; display: inline-block; width: 16px;
   height: auto;  margin-left: 5px;  margin-top: 2px;   transition: ease-in-out all 0.3s;}
-p.email a:hover:after{ margin-top: 5px;}
+p.email a:hover:after{ }
 
 /*special sections + divs */
 .hero{ }
@@ -82,7 +82,7 @@ box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);    justify-content: center;}
 footer{width: 100%; padding: 18px 0px; background-color: #262628; color: #FFF6EE; position: relative;  bottom: 0;}
 .footer-inner{max-width: 1200px; width: 90%; margin: auto;}
 #footer-menu{list-style: none; display: flex; padding-left: 0px;}
-#footer-menu li, #footer-menu li a{ margin-right: 20px; font-weight: 700; text-transform: uppercase; }
+#footer-menu li, #footer-menu li a{ margin-right: 20px; font-weight: 700; text-transform: uppercase; margin-bottom: 0px;}
 #footer-menu li a:hover{color: #d6dc82;}
 /****mobile****/
 @media only screen and (max-width: 880px) {
@@ -91,8 +91,8 @@ header {      display: flex;  align-items: center;}
 #header-menu {      display: none;}
 
 header .toggle {  display: block;  position: absolute;
-  right: 0px;  top: 25px;  transform: translateY(-50%);
-  margin: auto;  height: 23px;  width: 35px;  cursor: pointer;
+  right: 0px;  
+  margin: auto;    width: 35px;  cursor: pointer;
   z-index: 3;}
 
 header .toggle span {
@@ -135,13 +135,13 @@ header #toggle:checked ~ .toggle span::after {
   top: 0;  /* Center the bottom line */
   transform: rotate(-45deg);  /* Rotate the bottom line to form part of an 'X' */
 }
-.openmenu .menu-container {  position: absolute;width: 100%;
-  height: 100%;}
-.openmenu .header-inner {  height: 100vh;  background: #FFF;  width: 100vw;   padding: 100px 100px 200px !important ; display: block !important; }
-.openmenu  #header-menu {  display: block;  width: calc(100% - 50px);  max-width: 800px;  margin: auto; }
-.openmenu header .toggle{ right:50px; transform: translateY(50%);}
+.openmenu .menu-container {  position: absolute; margin-left: auto; margin-right: auto; padding:100px 0px !important;
+  height: 100%; width: 100%;}
+.openmenu .header-inner {  height: 100vh;  background: #FFF;  width: 100vw;    display: block !important; }
+.openmenu  #header-menu {  display: block;  width: 90%;  max-width: 800px;  margin: auto; }
+.openmenu header .toggle{ right:50px; top: 36px;}
 .openmenu .logo{ display: none !important;}
-#header-menu li, #header-menu li a{ font-size: 30px; line-height: 36px; margin-bottom: 20px; transition: 0.3s ease all;}
+#header-menu li, #header-menu li a{ font-size: 30px; line-height: 36px; margin-bottom: 20px !important; transition: 0.3s ease all; margin-left: 0;}
 
 
 
@@ -169,9 +169,8 @@ p.button{ margin-top: 1.5em;}
 
 @media only screen and (max-width: 640px) {
   /*header*/
-#header-menu li, #header-menu li a{ font-size: 20px; line-height: 26px; margin-bottom: 10px;}
-.openmenu header .toggle{ right:25px;}
-
+  .openmenu header .toggle{ right:25px;}
+  #header-menu li, #header-menu li a{line-height: 26px; font-size: 20px;}
 /*main*/
 
 /*footer*/
