@@ -7,13 +7,13 @@ font-family: "Lora", serif;
 
 /* Header */
 header {    width: 100%;  position: fixed;   height: 80px;      box-shadow: 0px 0px 5px rgba(38, 38, 40, 0.25); z-index: 100;  
-background-color: #FFF6EE;}
+background-color: #FFFFFF;}
 .header-inner {   max-width: 1200px;    width: 90%;    margin: auto;    padding: 18px 0;    position: relative; display: flex !important;  align-items: center; justify-content: space-between;}
   /* Menu */
 #header-menu {    list-style: none;    display: flex;    padding-left: 0;}
 #header-menu li {    margin-left: 20px;    font-weight: 700;    margin-bottom: 0px !important;
-  cursor: pointer;   text-transform: uppercase;}
- #header-menu li a {    margin-right: 20px;    font-weight: 700;    
+  cursor: pointer;   }
+ #header-menu li a {    margin-right: 20px;    font-weight: 700;    font-size: 1.1em;
   cursor: pointer;   text-transform: uppercase;}
   #header-menu li a:hover{color: #AC4B5A;}
 .toggle{ display: none;}
@@ -21,10 +21,10 @@ header .toggle::before {  top: 0px;}
 
 #toggle{ display: none;}
 
-header span.logo{ font-family: "Poppins", sans-serif; font-weight:900; font-size: 1.5em; line-height: 1em; margin-right: 30px;}
+header span.logo{ text-transform: uppercase; font-family: "Poppins", sans-serif; font-weight:900; font-size: 1.1em; line-height: 1em; margin-right: 30px;}
   
 /*main*/
-body{  margin: 0; background: #FFF6EE; color: #262628; box-sizing: border-box; height: 100vh;}
+body{  margin: 0; background: #FFFFFF; color: #262628; box-sizing: border-box; height: 100vh;}
 main{ padding: 100px 0;}
 img{max-width: 100%; height: auto;  border-radius: 15px;   }
 section{overflow: hidden;}
@@ -50,7 +50,7 @@ h2{   font-family: "Poppins", sans-serif; font-size: 3em;  line-height: 1; margi
 h3{ font-family: "Poppins", sans-serif; font-size: 2em;}
 h4{  font-family: "Poppins", sans-serif; font-size: 1.1em;}
 li{   font-family: "Lora", serif; font-size: 1em; margin-bottom: 1.5em;}
-p{  font-family: "Lora", serif; font-size: 1.1em; margin-bottom: 1.5em;  }
+p{  font-family: "Lora", serif; font-size: 1em; margin-bottom: 1.5em;  }
 p.button{position: relative;  margin-top: 3em; margin-right: 2.5em;}
 p.button a{  font-weight: 700; text-transform: uppercase; position: relative; }
 p.download a:after{ content: url(../images/download-solid.svg);  position: absolute; display: inline-block; width: 16px;
@@ -64,22 +64,22 @@ p.email a:hover:after{ }
 .hero{ }
 .headshot { max-height: 500px;}
 .two-col-inner.visual{ justify-content: center !important;  display: flex;}
-.green-visual div{border-radius: 25px; border-bottom: #d6dc82 solid 10px; display: flex; padding: 20px;  background-color: #FFF6EE; 
+.green-visual div{border-radius: 25px; border-bottom: #d6dc82 solid 10px; display: flex; padding: 20px;  background-color: #FFFFFF; 
   box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);     justify-content: center;}
 .green-visual img{display: flex; justify-content: center; object-fit: cover; border-radius: 15px;}
 .pink-visual div{border-radius: 25px; border-bottom: #d86072 solid 10px; display: flex;
- padding: 20px;  background-color: #FFF6EE; ;
+ padding: 20px;  background-color: #FFFFFF; ;
 box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);    justify-content: center;}
 .pink-visual img{display: flex; justify-content: center; width: 100%; object-fit: cover; border-radius: 15px;}
 .lavendar-visual div{border-radius: 25px; border-bottom: #c6c2f2 solid 10px; display: flex;
-  padding: 20px;  background-color: #FFF6EE; 
+  padding: 20px;  background-color: #FFFFFF; 
  box-shadow: 0px 0px 5px rgba(	38, 38, 40, 0.25);   justify-content: center;}
  .lavendar-visual img{display: flex; justify-content: center;width: 100%; object-fit: cover; border-radius: 15px;}
  .max1000{ max-width: 1000px;}
 
 
 /*footer*/
-footer{width: 100%; padding: 18px 0px; background-color: #262628; color: #FFF6EE; position: relative;  bottom: 0;}
+footer{width: 100%; padding: 18px 0px; background-color: #262628; color: #FFFFFF; position: relative;  bottom: 0;}
 .footer-inner{max-width: 1200px; width: 90%; margin: auto;}
 #footer-menu{list-style: none; display: flex; padding-left: 0px;}
 #footer-menu li, #footer-menu li a{ margin-right: 20px; font-weight: 700; text-transform: uppercase; margin-bottom: 0px;}
